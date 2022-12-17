@@ -1,21 +1,23 @@
 package com.example.catbreedsapplication
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import androidx.fragment.app.Fragment
 
 class ListFragment: Fragment(){
     internal interface OnFragmentSendDataListener {
+
         fun onSendData(data: String?)
     }
     private var fragmentSendDataListener: OnFragmentSendDataListener? = null
-    var countries = arrayOf<String?>("Абиссинская кошка", "Австралийский мист", "Азиатская табби", "Американский бобтейл", "Американский кёрл", "Анатолийская кошка","Балинезийская кошка", "Бенгальская кошка", "Бомбейская кошка","Британская кошка","Бурманская кошка","Гавана","Гималайская кошка","Йоркская кошка","Кимрик","Корат","Лаперм","Мейн-кун")
+    var countries = arrayOf<String?>("Абиссинская кошка", "Австралийский мист", "Азиатская табби", "Американский бобтейл", "Американский кёрл", "Анатолийская кошка","Балинезийская кошка", "Бенгальская кошка", "Бомбейская кошка","Британская кошка","Бурманская кошка","Гавана","Гималайская кошка","Йоркская кошка","Кимрик","Корат","Лаперм","Мейн-кун","Сосоке","Скиф-тай-дон","Сервал")
 
 
     override fun onAttach(context: Context) {

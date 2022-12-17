@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
 
 class InformationGuide : AppCompatActivity(),ListFragment.OnFragmentSendDataListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_information_guide)
+
     }
     override fun onSendData(selectedItem: String?) {
         val fragment = supportFragmentManager
@@ -40,4 +42,10 @@ class InformationGuide : AppCompatActivity(),ListFragment.OnFragmentSendDataList
         val men: Intent =Intent(this@InformationGuide,AboutActivity::class.java)
         startActivity(men)
     }
+    fun onClick(view: View)
+    {
+        val testt1 = Intent(this@InformationGuide,StartTest::class.java)
+        startActivity(testt1)
+    }
+
 }

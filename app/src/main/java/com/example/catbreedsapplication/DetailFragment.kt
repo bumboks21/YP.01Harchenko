@@ -94,6 +94,18 @@ class DetailFragment: Fragment() {
                 infoTextView?.text= getString(R.string.meinKunText)
                 imageView?.setImageResource(R.drawable.mein)
             }
+            "Сосоке"-> {
+                infoTextView?.text= getString(R.string.sosokeText)
+                imageView?.setImageResource(R.drawable.sosokee)
+            }
+            "Скиф-тай-дон"-> {
+                infoTextView?.text= getString(R.string.skifText)
+                imageView?.setImageResource(R.drawable.skif)
+            }
+            "Сервал"-> {
+                infoTextView?.text= getString(R.string.servalText)
+                imageView?.setImageResource(R.drawable.servall)
+            }
         }
     }
 }
